@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.purvampujari.conceptcrew.Main2Activity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:paddingTop="2dp"
+        app:srcCompat="@drawable/hi"
+        android:id="@+id/imageView2" />
+    <TextView
+        android:text="DJCSI represents CSI at the college level and it is affiliated with D. J. Sanghvi College of Engineering. As a cohesive team, our focus has always been presenting technological events that are in tandem with the latest offerings from the tech world. We strive to inculcate the passion for technology and learning that is present in each member, past and present, within the students of our college and beyond. Our interests can be seen in all of our work, whether it is in the various events we host throughout the year or the magazine we publish annually. From learning new software and languages to developing products and conducting talks by luminaries in the industry, we work hard to achieve our goal and enjoy seeing it through every year."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:id="@+id/textView2"
+        android:textSize="17sp"
+        android:paddingBottom="5dp"
+        android:background="#000066"
+        android:textColor="@android:color/background_light"
+        android:paddingTop="10dp" />
+    </LinearLayout>
+</RelativeLayout>
