@@ -1,5 +1,7 @@
 package com.example.purvampujari.conceptcrew;
 
+import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
@@ -21,6 +23,7 @@ public class Main3Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         stringArrayList = new ArrayList<>();
         editText = (EditText) findViewById(R.id.editText);
         listView = (ListView) findViewById(R.id.listView);
@@ -29,6 +32,19 @@ public class Main3Activity extends AppCompatActivity {
         listView.setAdapter(stringArrayAdapter);
         listView.setStackFromBottom(true);
         listView.setTranscriptMode(ListView.TRANSCRIPT_MODE_ALWAYS_SCROLL);
+        String ip = " BOT   : Hello Master , I am here to answer your queries regarding CODESHASTRA . " ;
+        stringArrayList.add(ip);
+    }
+    public void back(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+        finish();
+    }
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+        finish();
     }
     public void me(View view) {
         reply="";

@@ -7,13 +7,53 @@
     android:layout_height="match_parent"
     android:background="#000066"
     tools:context="com.example.purvampujari.conceptcrew.MainActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_top"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#033ba4">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:id="@+id/i"
+                android:layout_centerVertical="true"
+                android:background="@drawable/p"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp"
+                android:scaleType="centerCrop"
+                android:isScrollContainer="false"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/hu" />
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:text=" CODESHASTRA"
+              android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical|center_horizontal|center"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_width="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/i"
+                android:layout_toEndOf="@+id/i"
+                android:layout_marginStart="10dp" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="250dp"
         app:srcCompat="@drawable/hqdefault"
         android:id="@+id/imageView"
         android:scaleType="centerCrop"
-        android:layout_alignParentTop="true" />
+        android:layout_below="@+id/toolbar_top"
+     />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -22,6 +62,7 @@
         android:gravity="center_horizontal">
         <Button
             android:text="ABOUT"
+            android:background="@drawable/kk"
             android:layout_height="wrap_content"
             android:layout_above="@+id/register"
             android:layout_centerHorizontal="true"
@@ -30,28 +71,33 @@
             android:layout_weight="1"
             android:textSize="16sp"
             android:onClick="abo_next"
-            android:layout_marginTop="45dp"
-            android:layout_width="150dp" />
+            android:layout_marginTop="35dp"
+            android:layout_width="180dp"
+            android:textColor="#ffffff" />
     <Button
         android:text="REGISTER"
         android:layout_height="wrap_content"
         android:layout_above="@+id/bot"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="45dp"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/kk"
         android:textSize="16sp"
         android:layout_weight="1"
         android:id="@+id/register"
         android:onClick="reg_next"
-        android:layout_width="150dp" />
+        android:layout_width="180dp"
+        android:textColor="#ffffff" />
         <Button
             android:text="BOT"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="45dp"
+            android:layout_marginBottom="35dp"
             android:textSize="16sp"
             android:id="@+id/bot"
+            android:background="@drawable/kk"
             android:layout_weight="1"
             android:onClick="bot_next"
-            android:layout_width="150dp" />
+            android:layout_width="180dp"
+            android:textColor="#ffffff" />
     </LinearLayout>
 
 </RelativeLayout>
